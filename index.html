@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>devfinder</h1>
+            <button id="themeToggle">
+                <span id="themeText">Light</span> 
+                <span id="themeIcon">☀</span>
+            </button>
+        </header>
+        
+        <main>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search GitHub username...">
+                <button id="searchButton">Search</button>
+            </div>
+            <div id="userInfo" class="user-info hidden">
+                <div class="user-card">
+                    <img id="userAvatar" src="" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <h2 id="userName">The Octocat</h2>
+                        <p id="userBio">This profile has no bio</p>
+                        <div class="user-stats">
+                            <div class="stat">
+                                <p>Repos</p>
+                                <p id="userRepos">8</p>
+                            </div>
+                            <div class="stat">
+                                <p>Followers</p>
+                                <p id="userFollowers">3938</p>
+                            </div>
+                            <div class="stat">
+                                <p>Following</p>
+                                <p id="userFollowing">9</p>
+                            </div>
+                        </div>
+                        <div class="user-extra">
+                            <p><span>📍</span> San Francisco</p>
+                            <p><span>🔗</span> <a href="#" id="userBlog" target="_blank">Not available</a></p>
+                            <p><span>🏢</span> @github</p>
+                            <p><span>🐦</span> <a href="#" id="userTwitter" target="_blank">Not available</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

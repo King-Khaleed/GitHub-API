@@ -1,0 +1,79 @@
+:root {
+    --light-bg: white;
+    --dark-bg: darkblue;
+    --light-text: black;
+    --dark-text: white;
+    --primary-color: #0079ff;
+    --card-bg-light: white;
+    --card-bg-dark: #1f2a48;
+}
+
+body.light-theme {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+body.dark-theme {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-info {
+    margin-top: 20px;
+}
+
+.user-card {
+    display: flex;
+    background-color: var(--card-bg-light);
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+}
+
+body.dark-theme .user-card {
+    background-color: var(--card-bg-dark);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.user-details h2 {
+    margin: 0 0 10px;
+}
